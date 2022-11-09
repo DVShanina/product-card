@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;400&display=swap');
+
+//colors
+$blue: #3922C5;
+$blue__hover: #2C1A9A;
+$blue__click: #1F1368;
+$main-color: #0C0C0C;
+$text-color: #494949;
+$grey: #D9D9D9;
+$bg-color: #F4F4F4;
+//
+$h1: 26px;
+$h2: 22px;
+$h3: 18px;
+$size-main: 16px;
+$size-main-mobile: 14px;
+
+$font: 'Montserrat', sans-serif;
+
+@mixin button_blue () {
+     padding: 14px 24px;
+     background-color: $blue;
+     color: white;
+     border-radius: 16px;
+     font-family: $font;
+     font-size: $size-main;
+     font-weight: 400;
+     height: 52px;
+     cursor: pointer;
+}
+
+@mixin button_blue_hover () {
+     background-color: $blue__hover;
+}
+
+@mixin button_blue_click () {
+     background-color: $blue__click;
+}
+
+@mixin button_white {
+     padding: 14px 24px;
+     color: $main-color;
+     background-color: white; 
+     font-family: $font;
+     font-size: $size-main;
+     font-weight: 400;
+     height: 52px;
+     cursor: pointer; 
+}
+
+@mixin button_mobile {
+     font-size: $size-main-mobile;
+     width: 100%;
+}
+
+
+
+

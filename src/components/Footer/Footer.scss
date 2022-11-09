@@ -1,0 +1,40 @@
+@import "/src/variables.scss";
+
+.footer {
+    height: 112px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(12,12,12,0.1);
+    font-size: $size-main;
+    padding-left: 36px;
+    &__ok{
+        @include button_blue
+    }
+    &__cancel {
+        @include button_white
+    }
+}
+
+.footer__ok:hover {
+    @include button_blue_hover
+}
+.footer__ok:active {
+    @include button_blue_click
+}
+
+@media screen and (max-width: 375px) {
+    .footer{
+        margin-left: 0px;
+        padding: 0 20px;
+        height: 112px;
+        &__ok {
+            @include button_mobile
+        }
+        &__cancel {
+            @include button_mobile
+        }
+    }
+}

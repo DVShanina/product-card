@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-family: $font;
+  text-decoration: none;
+  color: black;
+  }
+
+  h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    padding: 102px;
+  }
+
+  @media screen and (max-width: 375px) {
+    #root {
+      padding: 40px 20px;
+      width: 100%;
+    }
+  }
+
+  input:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  button {
+    border: none;
+  }
